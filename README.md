@@ -11,3 +11,9 @@ import "<project-name>/pkg/util"
 
 path := util.FromRootPath("binaries")
 ```
+```golang
+// json to bytes
+import "<project-name>/pkg/util"
+
+data := util.MustJsonToBytes(jsonData)
+```
