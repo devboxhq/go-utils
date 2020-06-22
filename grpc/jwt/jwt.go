@@ -5,8 +5,8 @@ import (
 
 	jwt_go "github.com/dgrijalva/jwt-go"
 	grpc_auth "github.com/grpc-ecosystem/go-grpc-middleware/auth"
-	"github.com/uptimize/gg-execution/pkg/auth/jwt"
-	"github.com/uptimize/gg-execution/pkg/grpc/middleware"
+	"github.com/uptimize/go-utils/auth/jwt"
+	"github.com/uptimize/go-utils/grpc/middleware"
 )
 
 // JwtAuthService is an interface that is implemented to signal middleware to authenticate the request
