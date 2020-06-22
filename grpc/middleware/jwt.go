@@ -23,7 +23,7 @@ func NewJwtMiddleware(validationFunc ValidateJwtFunc) jwtMiddleware {
 	}
 }
 
-func (m *jwtMiddleware) GetInterceptors() ([]grpc.UnaryServerInterceptor, []grpc.StreamServerInterceptor, error) {
+func (m jwtMiddleware) GetInterceptors() ([]grpc.UnaryServerInterceptor, []grpc.StreamServerInterceptor, error) {
 	unary := []grpc.UnaryServerInterceptor{
 		func(ctx context.Context, req interface{}, info *grpc.UnaryServerInfo, handler grpc.UnaryHandler) (interface{}, error) {
 			newCtx, err := m.validationFunc(ctx, info.Server, info.FullMethod)
