@@ -45,6 +45,9 @@ func JwtMiddlewareValidator(manager *jwt.Manager) ValidateJwtFunc {
 					claims, err = manager.Verify(authToken)
 				}
 
+				if err != nil {
+					return ctx, err
+				}
 				newCtx = context.WithValue(ctx, "user", claims)
 			}
 		} else {
