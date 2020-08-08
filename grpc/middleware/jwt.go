@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/devboxhq/go-utils/auth/jwt"
 	jwt_go "github.com/dgrijalva/jwt-go"
 	grpc_middleware "github.com/grpc-ecosystem/go-grpc-middleware"
 	grpc_auth "github.com/grpc-ecosystem/go-grpc-middleware/auth"
-	"github.com/uptimize/go-utils/auth/jwt"
 	"google.golang.org/grpc"
 )
 

@@ -1,4 +1,4 @@
-module github.com/uptimize/go-utils
+module github.com/devboxhq/go-utils
 
 go 1.14
 

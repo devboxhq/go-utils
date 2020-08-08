@@ -9,13 +9,13 @@ List of packages:
 
 ## Installation
 ```
-go get -u github.com/uptimize/go-utils
+go get -u github.com/devboxhq/go-utils
 ```
 
 ## Examples
 - get root path based on relative path
 ```golang
-import "github.com/uptimize/go-utils/pkg/util"
+import "github.com/devboxhq/go-utils/pkg/util"
 
 func main() {
     path := util.FromRootPath("binaries")
@@ -23,7 +23,7 @@ func main() {
 ```
 - json to bytes
 ```golang
-import "github.com/uptimize/go-utils/pkg/util"
+import "github.com/devboxhq/go-utils/pkg/util"
 
 func main() {
     data := util.MustJsonToBytes(jsonData)
@@ -32,7 +32,7 @@ func main() {
 - GRPC zap middleware
 ```golang
 import (
-    "github.com/uptimize/go-utils/pkg/grpc/middleware"
+    "github.com/devboxhq/go-utils/pkg/grpc/middleware"
     "go.uber.org/zap"
     "google.golang.org/grpc"
 )
